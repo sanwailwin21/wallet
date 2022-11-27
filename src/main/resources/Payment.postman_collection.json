@@ -1,0 +1,894 @@
+{
+	"info": {
+		"_postman_id": "e6ba085a-0222-4f6a-a578-a69bb72a8188",
+		"name": "Payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20031030"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\" : \"sanwailwin\", \r\n    \"password\" : \"123456789\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\" : \"sanwailwin\", \r\n    \"password\" : \"123456789\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Nov 2022 02:04:46 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_message\": \"Register is successful.\",\n    \"access_token\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\" : \"sanwailwin\", \r\n    \"password\" : \"123456789\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\" : \"sanwailwin\", \r\n    \"password\" : \"123456789\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Nov 2022 02:05:12 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_message\": \"Login is successful.\",\n    \"access_token\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYW53YWlsd2luIiwiZXhwIjoxNjY5NTMyNzExLCJpYXQiOjE2Njk1MTQ3MTF9.lpSFSGnnZG67ZHmSPUVdmj0t8Tyi99sZna6F3ZEYskRJGHEqXlrk1_gtpuEdL3hjbXBa6tOSXoLk3uTzI7Ydlg\"\n}"
+				},
+				{
+					"name": "required",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\" : \"\", \r\n    \"password\" : \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Nov 2022 02:08:58 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorList\": [\n        {\n            \"status_message\": \"User name is required.\"\n        },\n        {\n            \"status_message\": \"Password is required.\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Bill Add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYW53YWlsd2luIiwiZXhwIjoxNjY5NTMyOTgwLCJpYXQiOjE2Njk1MTQ5ODB9.Z-74eB-LGIvjnmn3B3MNu5VVGccZRNvipLEgRHNEK27cd8ShC1cUmhcssEDVmXIgerVfMTjWPvnKpnY82NjgGw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Top up\",\r\n    \"description\": \"\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYW53YWlsd2luIiwiZXhwIjoxNjY5NTMyOTgwLCJpYXQiOjE2Njk1MTQ5ODB9.Z-74eB-LGIvjnmn3B3MNu5VVGccZRNvipLEgRHNEK27cd8ShC1cUmhcssEDVmXIgerVfMTjWPvnKpnY82NjgGw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Top up\",\r\n    \"description\": \"\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Nov 2022 02:09:58 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status_message\": \"Bill Top up is successfully saved in the system.\",\n        \"date_time\": \"20221127083958\",\n        \"bill_id\": 18,\n        \"name\": \"Top up\",\n        \"description\": \"\"\n    }\n}"
+				},
+				{
+					"name": "required",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYW53YWlsd2luIiwiZXhwIjoxNjY5NTMyOTgwLCJpYXQiOjE2Njk1MTQ5ODB9.Z-74eB-LGIvjnmn3B3MNu5VVGccZRNvipLEgRHNEK27cd8ShC1cUmhcssEDVmXIgerVfMTjWPvnKpnY82NjgGw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"description\": \"\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Nov 2022 02:12:50 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorList\": [\n        {\n            \"status_message\": \"Name is required.\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Bill list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Njk0ODQ1OTMsImV4cCI6MTY2OTU3MDk5M30.tOOaKcqBh-8WIysnawdooOdNf3AGtMDCcoaIs6Unq7N5DblgoWwjS3JBlwEaRSBmhLyG0sBVM-HSIDcgBMkx9Q",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/list?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"list"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Njk0ODQ1OTMsImV4cCI6MTY2OTU3MDk5M30.tOOaKcqBh-8WIysnawdooOdNf3AGtMDCcoaIs6Unq7N5DblgoWwjS3JBlwEaRSBmhLyG0sBVM-HSIDcgBMkx9Q",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/list?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"list"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Nov 2022 22:38:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_message\": \"Transaction is successful!\",\n    \"date_time\": \"20221127050819\",\n    \"billers\": [\n        {\n            \"bill_id\": 1,\n            \"name\": \"Top up\",\n            \"description\": \"\"\n        },\n        {\n            \"bill_id\": 2,\n            \"name\": \"Top up\",\n            \"description\": \"\"\n        },\n        {\n            \"bill_id\": 3,\n            \"name\": \"Top up\",\n            \"description\": \"\"\n        },\n        {\n            \"bill_id\": 4,\n            \"name\": \"Top up\",\n            \"description\": \"\"\n        },\n        {\n            \"bill_id\": 5,\n            \"name\": \"Top up\",\n            \"description\": \"\"\n        },\n        {\n            \"bill_id\": 6,\n            \"name\": \"Top up\",\n            \"description\": \"\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Bill Pay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Njk0ODQ1OTMsImV4cCI6MTY2OTU3MDk5M30.tOOaKcqBh-8WIysnawdooOdNf3AGtMDCcoaIs6Unq7N5DblgoWwjS3JBlwEaRSBmhLyG0sBVM-HSIDcgBMkx9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apiCaller\": \"Citizen Pay\",\r\n    \"billId\" : 2,\r\n    \"amount\" : 3500,\r\n    \"referenceNo\" : \"20221127\",\r\n    \"phoneNo\" : \"0934234234\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pay",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pay"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Njk0ODQ1OTMsImV4cCI6MTY2OTU3MDk5M30.tOOaKcqBh-8WIysnawdooOdNf3AGtMDCcoaIs6Unq7N5DblgoWwjS3JBlwEaRSBmhLyG0sBVM-HSIDcgBMkx9Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apiCaller\": \"Citizen Pay\",\r\n    \"billId\" : 2,\r\n    \"amount\" : 3500,\r\n    \"referenceNo\" : \"20221127\",\r\n    \"phoneNo\" : \"0934234234\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/pay",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pay"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Nov 2022 00:14:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status_message\": \"Transaction is successful!\",\n        \"transaction_id\": 3,\n        \"amount\": 3500,\n        \"transaction_date\": \"20221127064400\",\n        \"phone_number\": \"0934234234\"\n    }\n}"
+				},
+				{
+					"name": "required",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Njk0ODQ1OTMsImV4cCI6MTY2OTU3MDk5M30.tOOaKcqBh-8WIysnawdooOdNf3AGtMDCcoaIs6Unq7N5DblgoWwjS3JBlwEaRSBmhLyG0sBVM-HSIDcgBMkx9Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apiCaller\": \"Citizen Pay\",\r\n    \"billId\" : 0,\r\n    \"amount\" : 0,\r\n    \"referenceNo\" : \"\",\r\n    \"phoneNo\" : \"\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/pay",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pay"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Nov 2022 00:15:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorList\": [\n        {\n            \"status_message\": \"Reference number is required.\"\n        },\n        {\n            \"status_message\": \"Bill'id must not be less than 1.\"\n        },\n        {\n            \"status_message\": \"Phone number is required.\"\n        },\n        {\n            \"status_message\": \"Amount must not be less than 1.\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Transaction By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Njk0ODQ1OTMsImV4cCI6MTY2OTU3MDk5M30.tOOaKcqBh-8WIysnawdooOdNf3AGtMDCcoaIs6Unq7N5DblgoWwjS3JBlwEaRSBmhLyG0sBVM-HSIDcgBMkx9Q",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/list?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"list"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Njk0ODQ1OTMsImV4cCI6MTY2OTU3MDk5M30.tOOaKcqBh-8WIysnawdooOdNf3AGtMDCcoaIs6Unq7N5DblgoWwjS3JBlwEaRSBmhLyG0sBVM-HSIDcgBMkx9Q",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/transaction?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transaction"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 27 Nov 2022 01:09:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"amount\": 3500,\n        \"transaction_date\": \"20221127064400\",\n        \"phone_number\": \"0934234234\",\n        \"api_caller\": \"Citizen Pay\",\n        \"bill_id\": 2\n    }\n}"
+				}
+			]
+		}
+	]
+}
